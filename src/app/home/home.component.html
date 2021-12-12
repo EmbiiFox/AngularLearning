@@ -6,4 +6,8 @@
     <br>
     <input [value]="name" title="This is {{name}} my husband "/>
     <input [value]="name" [title]="'This is '+ name+ ' my husband'  "/>
+    <br>
+    <h2 *ngIf="age>18">Anh đã già nua rùi</h2>
+    <h2 *ngIf="age <= 18">Anh còn ngon trai lắm nhen </h2>
 </div>
+
