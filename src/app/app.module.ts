@@ -12,6 +12,7 @@ import { HeaderEx2Component } from './exercise2/header-ex2/header-ex2.component'
 import { FooterEx2Component } from './exercise2/footer-ex2/footer-ex2.component';
 import { CarouselEx2Component } from './exercise2/carousel-ex2/carousel-ex2.component';
 import { CollectionComponent } from './exercise2/collection/collection.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CollectionComponent } from './exercise2/collection/collection.component
     FooterEx2Component,
     CarouselEx2Component,
     CollectionComponent,
+    DataBindingComponent,
   ],
   imports: [
     BrowserModule,
