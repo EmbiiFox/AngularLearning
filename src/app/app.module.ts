@@ -13,6 +13,7 @@ import { FooterEx2Component } from './exercise2/footer-ex2/footer-ex2.component'
 import { CarouselEx2Component } from './exercise2/carousel-ex2/carousel-ex2.component';
 import { CollectionComponent } from './exercise2/collection/collection.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     CarouselEx2Component,
     CollectionComponent,
     DataBindingComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
