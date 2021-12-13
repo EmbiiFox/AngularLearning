@@ -20,5 +20,30 @@
     <ng-template #tre> <h2>Anh còn ngon trai lắm nhen</h2> </ng-template>
     <ng-template #gia> <h2>Anh già nua xấu xí r</h2> </ng-template>
 
+    <!-- ngFor -->
+    <h5>Đây là danh sách trái cây</h5>
+    <div *ngFor="let trai of fruit ;let i= index">
+        <li>{{i}}-{{trai}}</li>
+    </div>
+    <br>
+    <table class="table">
+        <tr>
+            <th>Thứ tự</th>
+            <th>Tên</th>
+            <th>Giá</th>
+            <th>Hạ giá</th>
+        </tr>
+        <tr *ngFor="let trai of fruit2; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{trai.ten}}</td>
+            <td class="right">
+                <!-- <span class="so-am">{{trai.gia}}</span> -->
+                <span [ngClass]="{'so-am':trai.gia<0}">{{trai.gia}}</span>
+            </td>
+            <td>{{trai.haGia}}</td>
+            <span *ngIf="trai.haGia"> Đang hạ giá!</span>
+        </tr>
+    </table>
+
 </div>
 
