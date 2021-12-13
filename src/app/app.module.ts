@@ -14,6 +14,7 @@ import { CarouselEx2Component } from './exercise2/carousel-ex2/carousel-ex2.comp
 import { CollectionComponent } from './exercise2/collection/collection.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { HomeComponent } from './home/home.component';
+import { OnSalePipe } from './on-sale.pipe';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HomeComponent } from './home/home.component';
     CollectionComponent,
     DataBindingComponent,
     HomeComponent,
+    OnSalePipe,
   ],
   imports: [
     BrowserModule,
