@@ -9,8 +9,16 @@
     <input type="text" [(ngModel)]="name"/>
     <h2>Chào bạn {{name}}</h2>
     <br>
-    <h2 *ngIf="age>18">Anh đã già nua rùi</h2>
-    <h2 *ngIf="age <= 18">Anh còn ngon trai lắm nhen </h2>
     <button (click)="resetName()">Reset Name</button>
+    <br>
+    <input type="text" [(ngModel)]="age"/>
+    <h2>Chào bạn {{age}}</h2>
+    <br>
+    <!-- <h2 *ngIf="age>18">Anh đã già nua rùi</h2>
+    <h2 *ngIf="age <= 18">Anh còn ngon trai lắm nhen </h2> -->
+    <div *ngIf="age<=18; then tre; else gia"></div>
+    <ng-template #tre> <h2>Anh còn ngon trai lắm nhen</h2> </ng-template>
+    <ng-template #gia> <h2>Anh già nua xấu xí r</h2> </ng-template>
+
 </div>
 
